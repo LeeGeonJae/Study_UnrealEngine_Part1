@@ -5,11 +5,12 @@
 	"Description": "",
 	"Modules": [
 		{
-			"Name": "UnrealString",
+			"Name": "UnrealReflection",
 			"Type": "Runtime",
 			"LoadingPhase": "Default",
 			"AdditionalDependencies": [
-				"Engine"
+				"Engine",
+				"CoreUObject"
 			]
 		}
 	],
