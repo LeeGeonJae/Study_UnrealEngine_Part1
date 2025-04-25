@@ -3,13 +3,13 @@
 using UnrealBuildTool;
 using System.Collections.Generic;
 
-public class UnrealCompositionEditorTarget : TargetRules
+public class UnrealDelegateTarget : TargetRules
 {
-	public UnrealCompositionEditorTarget( TargetInfo Target) : base(Target)
+	public UnrealDelegateTarget(TargetInfo Target) : base(Target)
 	{
-		Type = TargetType.Editor;
+		Type = TargetType.Game;
 		DefaultBuildSettings = BuildSettingsVersion.V5;
 		IncludeOrderVersion = EngineIncludeOrderVersion.Unreal5_5;
-		ExtraModuleNames.Add("UnrealComposition");
+		ExtraModuleNames.Add("UnrealDelegate");
 	}
 }

@@ -13,7 +13,7 @@
 class UCard;
 
 UCLASS()
-class UNREALCOMPOSITION_API UPerson : public UObject
+class UNREALDELEGATE_API UPerson : public UObject
 {
 	GENERATED_BODY()
 public:

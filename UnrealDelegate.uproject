@@ -5,7 +5,7 @@
 	"Description": "",
 	"Modules": [
 		{
-			"Name": "UnrealComposition",
+			"Name": "UnrealDelegate",
 			"Type": "Runtime",
 			"LoadingPhase": "Default",
 			"AdditionalDependencies": [
