@@ -4,18 +4,19 @@
 
 #include "CoreMinimal.h"
 #include "Person.h"
-#include "Staff.generated.h"
+#include "LessonInterface.h"
+#include "Student.generated.h"
 
 /**
  * 
  */
 UCLASS()
-class UNREALINTERFACE2_API UStaff : public UPerson
+class UNREALCOMPOSITION_API UStudent : public UPerson, public ILessonInterface
 {
 	GENERATED_BODY()
 	
 public:
-	UStaff();
+	UStudent();
 
-
+	virtual void DoLesson() override;
 };

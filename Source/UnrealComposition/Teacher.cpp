@@ -1,11 +1,12 @@
 ﻿// Fill out your copyright notice in the Description page of Project Settings.
 
-
+#include "Card.h"
 #include "Teacher.h"
 
 UTeacher::UTeacher()
 {
 	Name = TEXT("이선생");
+	Card->SetCardType(ECardType::Teacher);
 }
 
 void UTeacher::DoLesson()

@@ -3,13 +3,13 @@
 using UnrealBuildTool;
 using System.Collections.Generic;
 
-public class UnrealInterface2Target : TargetRules
+public class UnrealCompositionEditorTarget : TargetRules
 {
-	public UnrealInterface2Target(TargetInfo Target) : base(Target)
+	public UnrealCompositionEditorTarget( TargetInfo Target) : base(Target)
 	{
-		Type = TargetType.Game;
+		Type = TargetType.Editor;
 		DefaultBuildSettings = BuildSettingsVersion.V5;
 		IncludeOrderVersion = EngineIncludeOrderVersion.Unreal5_5;
-		ExtraModuleNames.Add("UnrealInterface2");
+		ExtraModuleNames.Add("UnrealComposition");
 	}
 }
