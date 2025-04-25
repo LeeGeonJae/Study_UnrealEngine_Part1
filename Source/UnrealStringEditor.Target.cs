@@ -3,13 +3,13 @@
 using UnrealBuildTool;
 using System.Collections.Generic;
 
-public class HelloUnrealEditorTarget : TargetRules
+public class UnrealStringEditorTarget : TargetRules
 {
-	public HelloUnrealEditorTarget( TargetInfo Target) : base(Target)
+	public UnrealStringEditorTarget( TargetInfo Target) : base(Target)
 	{
 		Type = TargetType.Editor;
 		DefaultBuildSettings = BuildSettingsVersion.V5;
 		IncludeOrderVersion = EngineIncludeOrderVersion.Unreal5_5;
-		ExtraModuleNames.Add("HelloUnreal");
+		ExtraModuleNames.Add("UnrealString");
 	}
 }
