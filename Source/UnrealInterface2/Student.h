@@ -3,23 +3,20 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
 #include "Person.h"
-#include "Teacher.generated.h"
+#include "LessonInterface.h"
+#include "Student.generated.h"
 
 /**
  * 
  */
 UCLASS()
-class UNREALREFLECTION_API UTeacher : public UPerson
+class UNREALINTERFACE2_API UStudent : public UPerson, public ILessonInterface
 {
 	GENERATED_BODY()
+	
 public:
-	UTeacher();
+	UStudent();
 
 	virtual void DoLesson() override;
-
-private:
-	UPROPERTY()
-	int32 Id;
 };

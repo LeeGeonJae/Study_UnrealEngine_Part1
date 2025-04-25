@@ -6,13 +6,10 @@
 UTeacher::UTeacher()
 {
 	Name = TEXT("이선생");
-	Year = 3;
-	Id = 1;
 }
 
 void UTeacher::DoLesson()
 {
-	Super::DoLesson();
-
-	UE_LOG(LogTemp, Log, TEXT("%d년차 선생님 %s님이 수업을 강의합니다."), Year, *Name);
+	ILessonInterface::DoLesson();
+	UE_LOG(LogTemp, Log, TEXT("%s 님은 가르칩니다."), *Name);
 }

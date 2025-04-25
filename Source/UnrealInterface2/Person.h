@@ -10,26 +10,17 @@
  * 
  */
 UCLASS()
-class UNREALREFLECTION_API UPerson : public UObject
+class UNREALINTERFACE2_API UPerson : public UObject
 {
 	GENERATED_BODY()
 public:
 	UPerson();
 
-	UFUNCTION()
-	virtual void DoLesson();
-
-	const FString& GetName() const;
-	void SetName(const FString& InName);
+	FString& GetName() { return Name; }
+	void SetName(const FString& InName) { Name = InName; }
 
 protected:
 	UPROPERTY()
 	FString Name;
 
-	UPROPERTY()
-	int32 Year;
-
-private:
-	
-	
 };

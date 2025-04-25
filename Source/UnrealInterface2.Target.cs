@@ -3,13 +3,13 @@
 using UnrealBuildTool;
 using System.Collections.Generic;
 
-public class UnrealReflectionEditorTarget : TargetRules
+public class UnrealInterface2Target : TargetRules
 {
-	public UnrealReflectionEditorTarget( TargetInfo Target) : base(Target)
+	public UnrealInterface2Target(TargetInfo Target) : base(Target)
 	{
-		Type = TargetType.Editor;
+		Type = TargetType.Game;
 		DefaultBuildSettings = BuildSettingsVersion.V5;
 		IncludeOrderVersion = EngineIncludeOrderVersion.Unreal5_5;
-		ExtraModuleNames.Add("UnrealReflection");
+		ExtraModuleNames.Add("UnrealInterface2");
 	}
 }

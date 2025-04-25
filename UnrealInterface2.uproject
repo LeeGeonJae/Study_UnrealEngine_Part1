@@ -5,11 +5,10 @@
 	"Description": "",
 	"Modules": [
 		{
-			"Name": "UnrealReflection",
+			"Name": "UnrealInterface2",
 			"Type": "Runtime",
 			"LoadingPhase": "Default",
 			"AdditionalDependencies": [
-				"Engine",
 				"CoreUObject"
 			]
 		}
