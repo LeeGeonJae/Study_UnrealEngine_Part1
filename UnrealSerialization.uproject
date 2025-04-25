@@ -5,12 +5,12 @@
 	"Description": "",
 	"Modules": [
 		{
-			"Name": "UnrealMemory",
+			"Name": "UnrealSerialization",
 			"Type": "Runtime",
 			"LoadingPhase": "Default",
 			"AdditionalDependencies": [
-				"CoreUObject",
-				"Engine"
+				"Engine",
+				"CoreUObject"
 			]
 		}
 	],

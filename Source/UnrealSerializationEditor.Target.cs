@@ -3,13 +3,13 @@
 using UnrealBuildTool;
 using System.Collections.Generic;
 
-public class UnrealMemoryTarget : TargetRules
+public class UnrealSerializationEditorTarget : TargetRules
 {
-	public UnrealMemoryTarget(TargetInfo Target) : base(Target)
+	public UnrealSerializationEditorTarget( TargetInfo Target) : base(Target)
 	{
-		Type = TargetType.Game;
+		Type = TargetType.Editor;
 		DefaultBuildSettings = BuildSettingsVersion.V5;
 		IncludeOrderVersion = EngineIncludeOrderVersion.Unreal5_5;
-		ExtraModuleNames.Add("UnrealMemory");
+		ExtraModuleNames.Add("UnrealSerialization");
 	}
 }

@@ -2,13 +2,13 @@
 
 using UnrealBuildTool;
 
-public class UnrealMemory : ModuleRules
+public class UnrealSerialization : ModuleRules
 {
-	public UnrealMemory(ReadOnlyTargetRules Target) : base(Target)
+	public UnrealSerialization(ReadOnlyTargetRules Target) : base(Target)
 	{
 		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 	
-		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "EnhancedInput" });
+		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "EnhancedInput", "Json", "JsonUtilities" });
 
 		PrivateDependencyModuleNames.AddRange(new string[] {  });
 
