@@ -3,13 +3,13 @@
 using UnrealBuildTool;
 using System.Collections.Generic;
 
-public class UnrealContainerTarget : TargetRules
+public class UnrealMemoryEditorTarget : TargetRules
 {
-	public UnrealContainerTarget(TargetInfo Target) : base(Target)
+	public UnrealMemoryEditorTarget( TargetInfo Target) : base(Target)
 	{
-		Type = TargetType.Game;
+		Type = TargetType.Editor;
 		DefaultBuildSettings = BuildSettingsVersion.V5;
 		IncludeOrderVersion = EngineIncludeOrderVersion.Unreal5_5;
-		ExtraModuleNames.Add("UnrealContainer");
+		ExtraModuleNames.Add("UnrealMemory");
 	}
 }

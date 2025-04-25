@@ -10,7 +10,7 @@
  * 
  */
 UCLASS()
-class UNREALCONTAINER_API UStudent : public UObject
+class UNREALMEMORY_API UStudent : public UObject
 {
 	GENERATED_BODY()
 	
